@@ -1,4 +1,4 @@
-import { UndirectedUnweightedGraph } from "../graphs-package/index.js";
+import { UndirectedUnweightedGraph } from "graphs-package";
 var g = UndirectedUnweightedGraph();
 g.addNode("A");
 g.addLink("A", "B");
