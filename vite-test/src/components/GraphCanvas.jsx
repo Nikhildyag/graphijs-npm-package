@@ -6,26 +6,26 @@ import '../assets/App.css';
 
 function GraphCanvas() {
   const graphRef = useRef(null);
-    //  const graph = new UndirectedWeightedGraph();
+     const graph = new UndirectedWeightedGraph();
 
-    // // Traffic flow with capacity (directed and weighted)
-    // const metroLinks = [
-    //     ['Downtown', 'Mall', 150],
-    //     ['Mall', 'Airport', 200],
-    //     ['Airport', 'Hotel District', 100],
-    //     ['Hotel District', 'Downtown', 75],
-    //     ['Downtown', 'University', 120],
-    //     ['University', 'Hospital', 90],
-    //     ['Hospital', 'Mall', 110],
-    //     ['Mall', 'Residential Area', 180],
-    //     ['Residential Area', 'School District', 95],
-    //     ['School District', 'Downtown', 130],
-    //     ['University', 'Tech Park', 160],
-    //     ['Tech Park', 'Airport', 140],
-    //     ['Tech Park', 'Mall', 85],
-    //     ['Hospital', 'Residential Area', 70],
-    //     ['Residential Area', 'University', 105]
-    // ];
+    // Traffic flow with capacity (directed and weighted)
+    const metroLinks = [
+        ['Downtown', 'Mall', 150],
+        ['Mall', 'Airport', 200],
+        ['Airport', 'Hotel District', 100],
+        ['Hotel District', 'Downtown', 75],
+        ['Downtown', 'University', 120],
+        ['University', 'Hospital', 90],
+        ['Hospital', 'Mall', 110],
+        ['Mall', 'Residential Area', 180],
+        ['Residential Area', 'School District', 95],
+        ['School District', 'Downtown', 130],
+        ['University', 'Tech Park', 160],
+        ['Tech Park', 'Airport', 140],
+        ['Tech Park', 'Mall', 85],
+        ['Hospital', 'Residential Area', 70],
+        ['Residential Area', 'University', 105]
+    ];
 
     // const mainNodes = ['Downtown', 'Mall', 'Airport', 'University'];
 
@@ -67,28 +67,28 @@ function GraphCanvas() {
 
 //   const mainNodes = ['Project Start', 'Integration', 'Testing', 'Project End'];
 
-  const graph = new DirectedWeightedGraph();
+  // const graph = new DirectedWeightedGraph();
 
-  // Traffic flow with capacity (directed and weighted)
-  const metroLinks = [
-    ['Downtown', 'Mall', 150],
-    ['Mall', 'Airport', 200],
-    ['Airport', 'Hotel District', 100],
-    ['Hotel District', 'Downtown', 75],
-    ['Downtown', 'University', 120],
-    ['University', 'Hospital', 90],
-    ['Hospital', 'Mall', 110],
-    ['Mall', 'Residential Area', 180],
-    ['Residential Area', 'School District', 95],
-    ['School District', 'Downtown', 130],
-    ['University', 'Tech Park', 160],
-    ['Tech Park', 'Airport', 140],
-    ['Tech Park', 'Mall', 85],
-    ['Hospital', 'Residential Area', 70],
-    ['Residential Area', 'University', 105]
-  ];
+  // // Traffic flow with capacity (directed and weighted)
+  // const metroLinks = [
+  //   ['Downtown', 'Mall', 150],
+  //   ['Mall', 'Airport', 200],
+  //   ['Airport', 'Hotel District', 100],
+  //   ['Hotel District', 'Downtown', 75],
+  //   ['Downtown', 'University', 120],
+  //   ['University', 'Hospital', 90],
+  //   ['Hospital', 'Mall', 110],
+  //   ['Mall', 'Residential Area', 180],
+  //   ['Residential Area', 'School District', 95],
+  //   ['School District', 'Downtown', 130],
+  //   ['University', 'Tech Park', 160],
+  //   ['Tech Park', 'Airport', 140],
+  //   ['Tech Park', 'Mall', 85],
+  //   ['Hospital', 'Residential Area', 70],
+  //   ['Residential Area', 'University', 105]
+  // ];
 
-  const mainNodes = ['Downtown', 'Mall', 'Airport', 'University'];
+  // const mainNodes = ['Downtown', 'Mall', 'Airport', 'University'];
 
   metroLinks.forEach(([from, to, weight]) => {
     graph.addLink(from, to, weight);
