@@ -1,6 +1,7 @@
 "use strict";
 import Graph from "./Graph.js";
 import { createGraph } from "./Graph.js";
+import GraphVisualizer from "./GraphVisualizer.js";
 
 // module.exports = {
 //   UndirectedUnweightedGraph: Graph.createGraph(false, false),
