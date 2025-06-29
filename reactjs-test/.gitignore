@@ -1,0 +1,50 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules/
+.pnp/
+.pnp.js
+
+# testing
+/coverage/
+
+# production
+/build/
+dist/
+dist-ssr/
+
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# misc
+.DS_Store
+Thumbs.db
+
+# editor settings
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: Mac system file
+.AppleDouble
+.LSOverride
+
+# Optional: Windows thumbnail cache
+ehthumbs.db
+desktop.ini
