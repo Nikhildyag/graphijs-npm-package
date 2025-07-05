@@ -1,7 +1,7 @@
 {
   "name": "graphijs",
-  "version": "1.0.4",
-  "description": "",
+  "version": "2.0.1",
+  "description": "A comprehensive graph library with shortest path algorithms and visualization capabilities",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,6 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/Nikhildyag/graphs-npm-package.git"
   },
+  "keywords": [
+    "graph",
+    "dijkstra",
+    "shortest-path",
+    "data-structure",
+    "visualization"
+  ],
   "author": "Nikhil Reddy",
   "license": "ISC",
   "bugs": {
